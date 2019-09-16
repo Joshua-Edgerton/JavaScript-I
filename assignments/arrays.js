@@ -1,7 +1,7 @@
 // To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
-
+// 8, 25, 30, 44, 45
 let inventory = [
   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
   { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
@@ -75,30 +75,82 @@ let inventory = [
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
+console.log("Car 33 is a " + (inventory[32].car_year) + " " + (inventory[32].car_make) + " " + (inventory[32].car_model));
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
-console.log();
+console.log((inventory[49].car_make) + " " + (inventory[49].car_model));
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 let carModelsSorted = [];
-console.log();
+var listlength = inventory.length - 1;
+const carsList = [inventory[1].car_model, inventory[2].car_model, inventory[3].car_model, inventory[4].car_model, inventory[5].car_model, inventory[6].car_model, inventory[7].car_model, inventory[8].car_model, inventory[9].car_model, inventory[10].car_model, inventory[11].car_model, inventory[12].car_model, inventory[13].car_model, inventory[14].car_model, inventory[15].car_model, inventory[16].car_model, inventory[17].car_model, inventory[18].car_model, inventory[19].car_model, inventory[20].car_model, inventory[21].car_model, inventory[22].car_model, inventory[23].car_model, inventory[24].car_model, inventory[25].car_model, inventory[26].car_model, inventory[27].car_model, inventory[28].car_model, inventory[29].car_model, inventory[30].car_model, inventory[31].car_model, inventory[32].car_model, inventory[33].car_model, inventory[34].car_model, inventory[35].car_model, inventory[36].car_model, inventory[37].car_model, inventory[38].car_model, inventory[39].car_model, inventory[40].car_model, inventory[41].car_model, inventory[42].car_model, inventory[43].car_model, inventory[44].car_model, inventory[45].car_model, inventory[46].car_model, inventory[47].car_model, inventory[48].car_model, inventory[49].car_model];
+
+console.log(carsList.sort());
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
-let carYears = [];
-console.log();
+const carsYear = [inventory[1].car_year, inventory[2].car_year, inventory[3].car_year, inventory[4].car_year, inventory[5].car_year, inventory[6].car_year, inventory[7].car_year, inventory[8].car_year, inventory[9].car_year, inventory[10].car_year, inventory[11].car_year, inventory[12].car_year, inventory[13].car_year, inventory[14].car_year, inventory[15].car_year, inventory[16].car_year, inventory[17].car_year, inventory[18].car_year, inventory[19].car_year, inventory[20].car_year, inventory[21].car_year, inventory[22].car_year, inventory[23].car_year, inventory[24].car_year, inventory[25].car_year, inventory[26].car_year, inventory[27].car_year, inventory[28].car_year, inventory[29].car_year, inventory[30].car_year, inventory[31].car_year, inventory[32].car_year, inventory[33].car_year, inventory[34].car_year, inventory[35].car_year, inventory[36].car_year, inventory[37].car_year, inventory[38].car_year, inventory[39].car_year, inventory[40].car_year, inventory[41].car_year, inventory[42].car_year, inventory[43].car_year, inventory[44].car_year, inventory[45].car_year, inventory[46].car_year, inventory[47].car_year, inventory[48].car_year, inventory[49].car_year];
+console.log(carsYear.sort());
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars = [];
-console.log();
+if (carsYear[0] < 2000){console.log(carsYear[0])}
+if (carsYear[1] < 2000){console.log(carsYear[1])}
+if (carsYear[2] < 2000){console.log(carsYear[2])}
+if (carsYear[3] < 2000){console.log(carsYear[3])}
+if (carsYear[4] < 2000){console.log(carsYear[4])}
+if (carsYear[5] < 2000){console.log(carsYear[5])}
+if (carsYear[6] < 2000){console.log(carsYear[6])}
+if (carsYear[7] < 2000){console.log(carsYear[7])}
+if (carsYear[8] < 2000){console.log(carsYear[8])}
+if (carsYear[9] < 2000){console.log(carsYear[9])}
+if (carsYear[10] < 2000){console.log(carsYear[10])}
+if (carsYear[11] < 2000){console.log(carsYear[11])}
+if (carsYear[12] < 2000){console.log(carsYear[12])}
+if (carsYear[13] < 2000){console.log(carsYear[13])}
+if (carsYear[14] < 2000){console.log(carsYear[14])}
+if (carsYear[15] < 2000){console.log(carsYear[15])}
+if (carsYear[16] < 2000){console.log(carsYear[16])}
+if (carsYear[17] < 2000){console.log(carsYear[17])}
+if (carsYear[18] < 2000){console.log(carsYear[18])}
+if (carsYear[19] < 2000){console.log(carsYear[19])}
+if (carsYear[20] < 2000){console.log(carsYear[20])}
+if (carsYear[21] < 2000){console.log(carsYear[21])}
+if (carsYear[22] < 2000){console.log(carsYear[22])}
+if (carsYear[23] < 2000){console.log(carsYear[23])}
+if (carsYear[24] < 2000){console.log(carsYear[24])}
+if (carsYear[25] < 2000){console.log(carsYear[25])}
+if (carsYear[26] < 2000){console.log(carsYear[26])}
+if (carsYear[27] < 2000){console.log(carsYear[27])}
+if (carsYear[28] < 2000){console.log(carsYear[28])}
+if (carsYear[29] < 2000){console.log(carsYear[29])}
+if (carsYear[30] < 2000){console.log(carsYear[30])}
+if (carsYear[31] < 2000){console.log(carsYear[31])}
+if (carsYear[32] < 2000){console.log(carsYear[32])}
+if (carsYear[33] < 2000){console.log(carsYear[33])}
+if (carsYear[34] < 2000){console.log(carsYear[34])}
+if (carsYear[35] < 2000){console.log(carsYear[35])}
+if (carsYear[36] < 2000){console.log(carsYear[36])}
+if (carsYear[37] < 2000){console.log(carsYear[37])}
+if (carsYear[38] < 2000){console.log(carsYear[38])}
+if (carsYear[39] < 2000){console.log(carsYear[39])}
+if (carsYear[40] < 2000){console.log(carsYear[40])}
+if (carsYear[41] < 2000){console.log(carsYear[41])}
+if (carsYear[42] < 2000){console.log(carsYear[42])}
+if (carsYear[43] < 2000){console.log(carsYear[43])}
+if (carsYear[44] < 2000){console.log(carsYear[44])}
+if (carsYear[45] < 2000){console.log(carsYear[45])}
+if (carsYear[46] < 2000){console.log(carsYear[46])}
+if (carsYear[47] < 2000){console.log(carsYear[47])}
+if (carsYear[48] < 2000){console.log(carsYear[48])}
+if (carsYear[49] < 2000){console.log(carsYear[49])}
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi = [];
+let BMWAndAudi = inventory[7, 24, 29, 43, 44];
 console.log();
+console.log(JSON.stringify(BMWAndAudi));
